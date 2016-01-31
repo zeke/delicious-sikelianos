@@ -1,0 +1,36 @@
+{
+  "name": "delicious-sikelianos",
+  "version": "1.0.0",
+  "description": "A foray into forgotten bookmarks; A backup of my 3247 del.icio.us posts from yesteryear.",
+  "main": "posts.json",
+  "scripts": {
+    "test": "snazzy",
+    "get-xml-1": "curl \"https://sikelianos:ereiamJH@api.del.icio.us/v1/posts/all\" > 1.xml",
+    "get-xml-2": "curl \"https://sikelianos:ereiamJH@api.del.icio.us/v1/posts/all?start=1000\" > 2.xml",
+    "get-xml-3": "curl \"https://sikelianos:ereiamJH@api.del.icio.us/v1/posts/all?start=2000\" > 3.xml",
+    "get-xml-4": "curl \"https://sikelianos:ereiamJH@api.del.icio.us/v1/posts/all?start=3000\" > 4.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeke/delicious-sikelianos.git"
+  },
+  "keywords": [
+    "delicious",
+    "del.icio.us",
+    "bookmarks",
+    "history",
+    "ephemera",
+    "nostalgia"
+  ],
+  "author": "zeke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/delicious-sikelianos/issues"
+  },
+  "homepage": "https://github.com/zeke/delicious-sikelianos#readme",
+  "devDependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.1.0",
+    "xml2js": "^0.4.16"
+  }
+}
